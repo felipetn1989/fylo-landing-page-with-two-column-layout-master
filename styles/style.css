@@ -145,12 +145,13 @@ header a {
 }
 
 h1 {
-  font-size: 1.4375rem;
+  font-size: 1.625rem;
 }
 
 form {
   display: grid;
   gap: 1rem;
+  padding: 0.875rem;
 }
 
 form > * {
@@ -168,9 +169,14 @@ button {
   border: none;
 }
 
+button:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
 .card__middle {
   padding: 1.5rem;
-  margin-top: 9rem;
+  margin-top: 8rem;
   font-size: 0.85rem;
 }
 
@@ -183,7 +189,7 @@ button {
 .card__middle p {
   text-align: left;
   color: var(--Desaturated-Blue);
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
 }
 
 .card__midle__text {
@@ -200,8 +206,13 @@ button {
   text-decoration: none;
   border-bottom: 1px solid var(--Moderate-Cyan);
   padding-bottom: 0.25rem;
-  margin: 0 6rem;
+  width: 9rem;
+  margin: auto;
   font-size: 0.75rem;
+}
+
+.fylo_work:hover {
+  opacity: 50%;
 }
 
 figure {
@@ -264,12 +275,148 @@ footer {
   background-color: var(--Very-Dark-Blue);
   color: white;
   font-size: 0.9375rem;
+  padding: 3rem 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+address {
+  display: grid;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 2.25rem;
+}
+
+li:nth-child(4) {
+  margin-bottom: 2rem;
+}
+
+li:hover {
+  cursor: pointer;
+  color: var(--Desaturated-Blue);
+}
+
+.address__phone,
+.address__email {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.address__phone {
+  margin-bottom: 1rem;
+}
+
+.icons {
+  display: flex;
+  gap: 0.5625rem;
+  justify-content: center;
+}
+
+ion-icon {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.375rem;
+}
+
+ion-icon:hover {
+  cursor: pointer;
+  color: var(--Desaturated-Blue);
+  border-color: var(--Desaturated-Blue);
 }
 
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 60em) {
+  header {
+    padding: 4rem;
+    font-size: 1rem;
+  }
+
+  header img {
+    width: 10rem;
+  }
+
+  header a {
+    padding-left: 3rem;
+  }
+
+  .card__top {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 2.4325rem;
+  }
+
+  .card__top {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+    padding: 4rem;
+  }
+
+  .card__top img,
+  .card__middle img {
+    max-width: 45%;
+
+  }
+
+  .form_top form {
+    display: flex;
+  }
+
+  .form_top input {
+    width: 20rem;
+  }
+
+  .form_top button {
+    width: 12rem;
+  }
+
+  .card__middle {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 3rem;
+    text-align: left;
+    padding: 4rem;
+  }
+
+  .card__middle h2 {
+    font-size: 2.4325rem;
+  }
+
+  .card__middle p {
+    font-size: 1.0625rem;
+  }
+
+  .card__midle__text {
+    padding-right: 2rem;
+  }
+
+  .fylo_work {
+    margin: 0;
+    font-size: .875rem;
+    width: 10rem;
+  }
+
+  figure {
+    margin: 0;
+    padding: 2rem;
+    width: 22rem;
+    margin-top: 1.5rem;
+    font-size: .8125rem;
+  }
 }

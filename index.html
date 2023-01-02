@@ -70,7 +70,11 @@
           </p>
           <a class="fylo_work" href="#"
             >See how Fylo works
-            <img src="images/icon-arrow.svg" alt="" aria-hidden="true"
+            <img
+              class="arrow"
+              src="images/icon-arrow.svg"
+              alt=""
+              aria-hidden="true"
           /></a>
           <figure>
             <blockquote>
@@ -118,10 +122,14 @@
     <footer>
       <img src="images/logo-white.png" alt="Company logo" />
       <address>
-        <img src="images/icon-phone.svg" alt="Phone icon" />
-        Phone: +1-543-123-4567 <br />
-        <img src="images/icon-email.svg" alt="Email icon" />
-        example@fylo.com
+        <div class="address__phone">
+          <img src="images/icon-phone.svg" alt="Phone icon" />
+          Phone: +1-543-123-4567
+        </div>
+        <div class="address__email">
+          <img src="images/icon-email.svg" alt="Email icon" />
+          example@fylo.com
+        </div>
       </address>
       <ul>
         <li>About Us</li>
@@ -132,7 +140,11 @@
         <li>Terms</li>
         <li>Privacy</li>
       </ul>
-      <div class="icons">ICONS</div>
+      <div class="icons">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
 
       <p class="attribution">
         Challenge by
@@ -145,4 +157,9 @@
       </p>
     </footer>
   </body>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
 </html>
