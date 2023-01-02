@@ -131,12 +131,12 @@ header a {
 
 .card {
   text-align: center;
-  padding: 1.5rem;
 }
 
 .card__top {
   color: var(--Very-Dark-Blue);
   font-size: 0.9325rem;
+  padding: 1.5rem;
 }
 
 .card__top > *,
@@ -169,6 +169,7 @@ button {
 }
 
 .card__middle {
+  padding: 1.5rem;
   margin-top: 9rem;
   font-size: 0.85rem;
 }
@@ -185,8 +186,9 @@ button {
   font-size: 0.8125rem;
 }
 
-.card__midle__text > * {
-  margin-bottom: 1.25rem;
+.card__midle__text {
+  display: grid;
+  gap: 1.5rem;
 }
 
 .fylo_work {
@@ -198,15 +200,15 @@ button {
   text-decoration: none;
   border-bottom: 1px solid var(--Moderate-Cyan);
   padding-bottom: 0.25rem;
-  margin: 2rem 6rem;
+  margin: 0 6rem;
   font-size: 0.75rem;
 }
 
 figure {
   background-color: white;
   border-radius: 0.5rem;
-  margin: 0 1.5rem;
-  padding: 1rem;
+  margin: 1rem 1.5rem 4rem 1.5rem;
+  padding: 1.5rem;
   text-align: justify;
   font-size: 0.6875rem;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.298);
@@ -221,7 +223,7 @@ figcaption {
   font-weight: var(--fw-bold);
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .span_flex {
@@ -237,6 +239,31 @@ span.job {
 figcaption img {
   border-radius: 50%;
   width: 1.75rem;
+}
+
+.bottom_form {
+  display: grid;
+  gap: 2rem;
+  background-color: var(--Desaturated-Blue);
+  color: white;
+  padding: 4rem 3rem;
+  font-size: 0.875rem;
+}
+
+.bottom_form h3 {
+  margin-bottom: 1rem;
+}
+
+.bottom_form > form {
+  margin: 0 1rem;
+  gap: 0.5rem;
+  font-size: 0.625rem;
+}
+
+footer {
+  background-color: var(--Very-Dark-Blue);
+  color: white;
+  font-size: 0.9375rem;
 }
 
 .attribution {
