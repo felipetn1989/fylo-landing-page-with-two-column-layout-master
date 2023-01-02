@@ -99,6 +99,8 @@ h6 {
 
 body {
   font-family: var(--ff-opensans);
+  color: var(--Very-Dark-Blue);
+  font-size: 1rem;
 }
 
 h1,
@@ -126,7 +128,6 @@ header img {
 header a {
   padding-left: 1.25rem;
   text-decoration: none;
-  color: var(--Very-Dark-Blue);
 }
 
 .card {
@@ -134,8 +135,6 @@ header a {
 }
 
 .card__top {
-  color: var(--Very-Dark-Blue);
-  font-size: 0.9325rem;
   padding: 1.5rem;
 }
 
@@ -176,14 +175,24 @@ button:hover {
 
 .card__middle {
   padding: 1.5rem;
-  margin-top: 8rem;
-  font-size: 0.85rem;
+  position: relative;
+  background-color: #f8f8fe;
+}
+
+.card__middle::before {
+  content: "";
+  background-image: url(../images/bg-curve-mobile.svg);
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  height: 4rem;
+  width: 100%;
 }
 
 .card__middle h2 {
   margin-top: 4rem;
-  font-size: 1rem;
-  color: var(--Very-Dark-Blue);
 }
 
 .card__middle p {
@@ -274,7 +283,6 @@ figcaption img {
 footer {
   background-color: var(--Very-Dark-Blue);
   color: white;
-  font-size: 0.9375rem;
   padding: 3rem 2rem;
   display: grid;
   gap: 2rem;
@@ -342,6 +350,7 @@ ion-icon:hover {
 }
 
 @media screen and (min-width: 60em) {
+
   header {
     padding: 4rem;
     font-size: 1rem;
@@ -355,12 +364,9 @@ ion-icon:hover {
     padding-left: 3rem;
   }
 
-  .card__top {
-    font-size: 1.125rem;
-  }
-
-  h1 {
-    font-size: 2.4325rem;
+  h1,
+  .card__midle__text > h2 {
+    font-size: 2.5rem;
   }
 
   .card__top {
@@ -369,6 +375,7 @@ ion-icon:hover {
     align-items: center;
     text-align: left;
     padding: 4rem;
+    font-size: 1.0625rem;
   }
 
   .card__top img,
@@ -397,16 +404,16 @@ ion-icon:hover {
     padding: 4rem;
   }
 
-  .card__middle h2 {
-    font-size: 2.4325rem;
-  }
-
-  .card__middle p {
-    font-size: 1.0625rem;
+  .card__middle::before {
+    background-image: url(../images/bg-curve-desktop.svg);
   }
 
   .card__midle__text {
     padding-right: 2rem;
+  }
+
+  .card__midle__text p {
+    font-size: 1.0625rem;
   }
 
   .fylo_work {
@@ -428,7 +435,6 @@ ion-icon:hover {
     text-align: left;
     column-gap: 10rem;
     padding: 4rem;
-    font-size: 1rem;
   }
 
   .bottom_form h3 {
