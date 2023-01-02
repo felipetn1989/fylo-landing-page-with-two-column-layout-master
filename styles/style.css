@@ -280,13 +280,17 @@ footer {
   gap: 2rem;
 }
 
+footer > img {
+  width: 9rem;
+}
+
 address {
   display: grid;
 }
 
 ul {
   list-style-type: none;
-  padding: 0;
+  padding: 3rem 0;
   line-height: 2.25rem;
 }
 
@@ -370,7 +374,6 @@ ion-icon:hover {
   .card__top img,
   .card__middle img {
     max-width: 45%;
-
   }
 
   .form_top form {
@@ -408,7 +411,7 @@ ion-icon:hover {
 
   .fylo_work {
     margin: 0;
-    font-size: .875rem;
+    font-size: 0.875rem;
     width: 10rem;
   }
 
@@ -417,6 +420,48 @@ ion-icon:hover {
     padding: 2rem;
     width: 22rem;
     margin-top: 1.5rem;
-    font-size: .8125rem;
+    font-size: 0.8125rem;
+  }
+
+  .bottom_form {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    column-gap: 10rem;
+    padding: 4rem;
+    font-size: 1rem;
+  }
+
+  .bottom_form h3 {
+    font-size: 1.8125rem;
+  }
+
+  .bottom_form button {
+    width: 12rem;
+  }
+
+  footer {
+    padding: 4rem;
+  }
+
+  .footer__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6rem;
+    place-items: start left;
+  }
+
+  ul {
+    columns: 2;
+    column-gap: 7rem;
+    padding: 0;
+    line-height: normal;
+  }
+
+  li {
+    margin-bottom: 1.5rem;
+  }
+
+  .icons {
+    place-self: start center;
   }
 }
