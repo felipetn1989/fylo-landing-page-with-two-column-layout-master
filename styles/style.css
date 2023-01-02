@@ -448,6 +448,7 @@ ion-icon:hover {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 6rem;
     place-items: start left;
+    margin-bottom: 2rem;
   }
 
   ul {
