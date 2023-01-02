@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+/* Josh Comeau's CSS Reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  /* ### Primary */
+
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+
+  /* ### Accent */
+
+  --Bright-Blue: hsl(224, 93%, 58%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+
+  /* ### Neutral */
+
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --ff-raleway: "Raleway", sans-serif;
+  --ff-opensans: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: var(--ff-opensans);
+}
+
+h1,
+h2,
+h3,
+button,
+figure {
+  font-family: var(--ff-raleway);
+}
+
+header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--ff-raleway);
+  font-size: 0.75rem;
+  margin-bottom: 4rem;
+}
+
+header img {
+  width: 5.5rem;
+}
+
+header a {
+  padding-left: 1.25rem;
+  text-decoration: none;
+  color: var(--Very-Dark-Blue);
+}
+
+.card {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.card__top {
+  color: var(--Very-Dark-Blue);
+  font-size: 0.9325rem;
+}
+
+.card__top > *,
+.form_top > * {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1.4375rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+form > * {
+  height: 2.5rem;
+}
+
+form > label {
+  display: none;
+}
+
+button {
+  background-color: var(--Bright-Blue);
+  color: var(--Light-Grayish-Blue);
+  font-weight: var(--fw-bold);
+  border: none;
+}
+
+.card__middle {
+  margin-top: 9rem;
+  font-size: 0.85rem;
+}
+
+.card__middle h2 {
+  margin-top: 4rem;
+  font-size: 1rem;
+  color: var(--Very-Dark-Blue);
+}
+
+.card__middle p {
+  text-align: left;
+  color: var(--Desaturated-Blue);
+  font-size: 0.8125rem;
+}
+
+.card__midle__text > * {
+  margin-bottom: 1.25rem;
+}
+
+.fylo_work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--Moderate-Cyan);
+  text-decoration: none;
+  border-bottom: 1px solid var(--Moderate-Cyan);
+  padding-bottom: 0.25rem;
+  margin: 2rem 6rem;
+  font-size: 0.75rem;
+}
+
+figure {
+  background-color: white;
+  border-radius: 0.5rem;
+  margin: 0 1.5rem;
+  padding: 1rem;
+  text-align: justify;
+  font-size: 0.6875rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.298);
+}
+
+blockquote img {
+  margin-bottom: 0.75rem;
+}
+
+figcaption {
+  margin-top: 1rem;
+  font-weight: var(--fw-bold);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.span_flex {
+  display: flex;
+  flex-direction: column;
+}
+
+span.job {
+  font-size: 0.5rem;
+  font-weight: var(--fw-regular);
+}
+
+figcaption img {
+  border-radius: 50%;
+  width: 1.75rem;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

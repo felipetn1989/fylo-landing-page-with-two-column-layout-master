@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="" aria-hidden="true" />
+      <nav>
+        <a href="#">Features</a>
+        <a href="#">Team</a>
+        <a href="#">Sign In</a>
+      </nav>
+    </header>
+
+    <main class="card">
+      <div class="card__top">
+        <img
+          src="images/illustration-1.svg"
+          alt="Drawing of two people getting files from a giant file folder"
+        />
+        <div class="form_top">
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p>
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <form action="#" method="post">
+            <label for="iemail">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="iemail"
+              required
+              placeholder="  Enter your email..."
+            />
+            <button>Get Started</button>
+          </form>
+        </div>
+      </div>
+      <div class="card__middle">
+        <img
+          src="images/illustration-2.svg"
+          alt="A drawing of three people holding giant social media posts"
+        />
+        <div class="card__midle__text">
+          <h2>Stay productive, wherever you are</h2>
+          <p>
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
+          </p>
+          <p>
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required!
+          </p>
+          <a class="fylo_work" href="#"
+            >See how Fylo works
+            <img src="images/icon-arrow.svg" alt="" aria-hidden="true"
+          /></a>
+          <figure>
+            <blockquote>
+              <img src="images/icon-quotes.svg" alt="" />
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </blockquote>
+            <figcaption>
+              <img
+                src="images/avatar-testimonial.jpg"
+                alt="Headshot of Kyle Burton"
+              />
+              <div class="span_flex">
+                <span class="name">Kyle Burton </span>
+                <span class="job">Founder & CEO, Huddle</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="bottom_form">
+        <div class="bottom-form__text">
+          <h3>Get early access today</h3>
+          <p>
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <form action="#" method="post">
+          <label for="iemail_bottom">Email:</label>
+          <input
+            type="email"
+            name="email_bottom"
+            id="iemail_bottom"
+            required
+            placeholder="  email@example.com"
+          />
+          <button>Get Started For Free</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <img src="images/logo-white.png" alt="Company logo" />
+      <address>
+        <img src="images/icon-phone.svg" alt="Phone icon" />
+        Phone: +1-543-123-4567 <br />
+        <img src="images/icon-email.svg" alt="Email icon" />
+        example@fylo.com
+      </address>
+      <ul>
+        <li>About Us</li>
+        <li>Jobs</li>
+        <li>Press</li>
+        <li>Blog</li>
+        <li>Contact Us</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+      <div class="icons">ICONS</div>
+
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/felipetn1989" target="_blank"
+          >Felipe Thomé</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
