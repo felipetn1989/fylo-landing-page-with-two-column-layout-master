@@ -122,7 +122,7 @@ header {
 }
 
 header img {
-  width: 5.5rem;
+  width: 5rem;
 }
 
 header a {
@@ -131,17 +131,26 @@ header a {
   color: var(--Very-Dark-Blue);
 }
 
+nav {
+  display: flex;
+  gap: 0.3125rem;
+}
+
 .card {
   text-align: center;
 }
 
 .card__top {
-  padding: 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 
 .card__top > *,
 .form_top > * {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.form_top p {
+  font-size: 0.875rem;
 }
 
 h1 {
@@ -175,7 +184,8 @@ button:hover {
 }
 
 .card__middle {
-  padding: 1.5rem;
+  margin-top: 5.5rem;
+  padding: 3rem 1.5rem;
   position: relative;
   background-color: #f8f8fe;
 }
@@ -193,7 +203,8 @@ button:hover {
 }
 
 .card__middle h2 {
-  margin-top: 4rem;
+  font-size: 1rem;
+  margin-top: 5.5rem;
 }
 
 .card__middle p {
@@ -204,7 +215,7 @@ button:hover {
 
 .card__midle__text {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .fylo_work {
@@ -218,6 +229,7 @@ button:hover {
   padding-bottom: 0.25rem;
   width: 9rem;
   margin: auto;
+  margin-top: 0.9375rem;
   font-size: 0.75rem;
 }
 
@@ -228,8 +240,8 @@ button:hover {
 figure {
   background-color: white;
   border-radius: 0.5rem;
-  margin: 1rem 1.5rem 4rem 1.5rem;
-  padding: 1.5rem;
+  margin: 1rem 1.5rem 2rem 1.5rem;
+  padding: 1.1875rem 1.5rem;
   text-align: justify;
   font-size: 0.6875rem;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.298);
@@ -264,14 +276,24 @@ figcaption img {
 
 .bottom_form {
   display: grid;
-  gap: 2rem;
+  gap: .5rem;
   background-color: var(--Desaturated-Blue);
   color: white;
-  padding: 4rem 3rem;
+  padding: 3.4375rem 2rem;
   font-size: 0.875rem;
 }
 
+bottom_input {
+  width: 17rem;
+}
+
+#iemail_bottom,
+.bottom_button {
+  height: 2rem;
+}
+
 .bottom_form h3 {
+  font-size: 1.0625rem;
   margin-bottom: 1rem;
 }
 
@@ -284,13 +306,13 @@ figcaption img {
 footer {
   background-color: var(--Very-Dark-Blue);
   color: white;
-  padding: 3rem 2rem;
+  padding: 4.25rem 2.5rem;
   display: grid;
-  gap: 2rem;
+  gap: 2.25rem;
 }
 
 footer > img {
-  width: 9rem;
+  width: 11rem;
 }
 
 address {
@@ -299,8 +321,8 @@ address {
 
 ul {
   list-style-type: none;
-  padding: 3rem 0;
-  line-height: 2.25rem;
+  padding: 3rem 0 2.5rem 0;
+  line-height: 2.375rem;
 }
 
 li:nth-child(4) {
