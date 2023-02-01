@@ -128,6 +128,7 @@ header img {
 header a {
   padding-left: 1.25rem;
   text-decoration: none;
+  color: var(--Very-Dark-Blue);
 }
 
 .card {
