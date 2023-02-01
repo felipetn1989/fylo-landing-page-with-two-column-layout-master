@@ -374,7 +374,7 @@ ion-icon:hover {
 
 @media screen and (min-width: 60em) {
   header {
-    padding: 4rem;
+    padding: 4rem 5rem 1.125rem;
     font-size: 1rem;
   }
 
@@ -383,7 +383,7 @@ ion-icon:hover {
   }
 
   header a {
-    padding-left: 3rem;
+    padding-left: 3.3125rem;
   }
 
   h1,
@@ -396,13 +396,28 @@ ion-icon:hover {
     flex-direction: row-reverse;
     align-items: center;
     text-align: left;
-    padding: 4rem;
     font-size: 1.0625rem;
+  }
+
+  .card__top img {
+    flex: 1;
   }
 
   .card__top img,
   .card__middle img {
     max-width: 45%;
+  }
+
+  form {
+    padding: unset;
+  }
+
+  .form_top {
+    width: 50%;
+  }
+
+  .form_top p {
+    font-size: 1.125rem;
   }
 
   .form_top form {
@@ -423,7 +438,8 @@ ion-icon:hover {
     align-items: center;
     gap: 3rem;
     text-align: left;
-    padding: 4rem;
+    padding: 2rem 4.75rem;
+    margin-top: 12rem;
   }
 
   .card__middle::before {
@@ -431,7 +447,11 @@ ion-icon:hover {
   }
 
   .card__midle__text {
-    padding-right: 2rem;
+    gap: 1rem;
+  }
+
+  .card__midle__text h2 {
+    margin-bottom: .9375rem;
   }
 
   .card__midle__text p {
@@ -453,14 +473,15 @@ ion-icon:hover {
   }
 
   .bottom_form {
+    margin-top: 5rem;
     grid-template-columns: 1fr 1fr;
     text-align: left;
     column-gap: 10rem;
-    padding: 4rem;
+    padding: 6rem 4rem;
   }
 
   .bottom_form h3 {
-    font-size: 1.8125rem;
+    font-size: 2rem;
   }
 
   .bottom_form button {
@@ -468,7 +489,16 @@ ion-icon:hover {
   }
 
   footer {
-    padding: 4rem;
+    padding: 7.75rem 5rem;
+  }
+
+  #iemail_bottom {
+    height: 3.5rem;
+    width: 30rem;
+  }
+
+  .bottom_button {
+    height: 3.5rem;
   }
 
   .footer__content {
@@ -481,7 +511,7 @@ ion-icon:hover {
 
   ul {
     columns: 2;
-    column-gap: 7rem;
+    column-gap: 11rem;
     padding: 0;
     line-height: normal;
   }
@@ -492,5 +522,6 @@ ion-icon:hover {
 
   .icons {
     place-self: start center;
+    gap: 2rem;
   }
 }
